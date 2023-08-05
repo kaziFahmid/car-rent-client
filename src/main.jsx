@@ -44,7 +44,14 @@ const router = createBrowserRouter([
         path:'/',
         element:<Home/>
       },
-     
+      {
+        path:'/login',
+        element:<Login/>
+      },
+      {
+        path:'/signup',
+        element:<Signup/>
+      }
     ]
   },
   {
@@ -81,14 +88,7 @@ const router = createBrowserRouter([
       }
     ]
   },
-  {
-    path:'/login',
-    element:<Login/>
-  },
-  {
-    path:'/signup',
-    element:<Signup/>
-  }
+
 ]);
 const queryClient = new QueryClient()
 ReactDOM.createRoot(document.getElementById('root')).render(
