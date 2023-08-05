@@ -5,6 +5,10 @@ import Card from './Card';
 
 import { useQuery } from '@tanstack/react-query';
 import { Helmet } from 'react-helmet';
+import Banner from './Banner/Banner';
+import BestRental from './BestRental/BestRental';
+import Journey from '../Journey/Journey';
+import Brands from './Brands/Brands';
 
 export default function Home() {
   const[cars,setCar]=useState('')
@@ -80,6 +84,11 @@ const itemsPerpage=8
   <Helmet>
     <title>Car Hunting|Home</title>
   </Helmet>
+   <Banner/>
+  
+
+<Brands/>
+
    <FilterBox handleCars={handleCars} handleLocation={handleLocation}
 handleFuelType={handleFuelType}
 handleBrand={handleBrand}
@@ -103,6 +112,9 @@ handleAvailabilityDate={handleAvailabilityDate} asc={asc} setAsc={setAsc} />
   {pageNumber.map((pages,index)=>{return <button key={index} onClick={(e)=>setCurrentPage(pages)} className={` me-4 btn ${currentPage===pages?'bg-sky-600 duration-200 text-white':'bg-slate-200 duration-200'}`}>{pages}</button>})}
 
   </div>
+
+  <BestRental/>
+  <Journey/>
     </>
   )
   

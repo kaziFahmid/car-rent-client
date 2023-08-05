@@ -13,7 +13,7 @@ export default function Header() {
     };
   return (
     <>
-      <header className='flex justify-around items-center pt-4  '>
+      <header className=' navbar flex justify-around items-center bg-white  '>
         <div>
         <h1 className='italic font-bold text-2xl'>Car Hunting</h1>
         </div>

@@ -6,6 +6,13 @@ export default {
   ],
   theme: {
     extend: {},
+    backgroundSize: {
+      'auto': 'auto',
+      'cover': 'cover',
+      'contain': 'contain',
+      '100%': '100%',
+      '100%': '100%',
+    }
   },
   plugins: [require("daisyui")],
 }
