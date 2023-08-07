@@ -9,25 +9,21 @@ const Banner = () => {
     easing: 'ease-in-sine',
     delay: 100,
   });
-  return (
+  return (       
 
-    <section className=' bg-[url(https://i.ibb.co/Js2HFCD/pngwing-com.png)] bg-no-repeat lg:bg-contain bg-cover bg-right  bg-slate-200 h-screen  '>
+<section className='flex items-center justify-center bg-[url(https://efs.consulting/app/uploads/2023/07/Header_Upcoming-Developments-of-the-Automotive-Regulatory_3840x2160px-1-scaled.jpg)] bg-no-repeat bg-cover bg-center bg-slate-200 h-screen'>
 
-<div className='lg:relative flex lg:flex-row flex-col justify-center '>
-<div data-aos="fade-right" className='lg:mt-14 mt-24 lg:me-5 text-center lg:text-start '>
-    <h1 className='lg:text-7xl text-4xl font-bold text-white lg:text-black'>Founded on Passion <span className='text-white'>Built</span><br className='hidden lg:block '></br> On Service.</h1>
-
-    <button className='bg-sky-600 text-white btn mt-6'>Request a Quote</button>
-   
+<div data-aos="fade-right" className="w-full">
+  <div className="text-center">
+    <h1 className='text-white lg:text-6xl text-3xl md:text-4xl font-bold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. m</h1>
+    <div className='mt-5'>
+<button className='text-white bg-sky-500 btn px-14 '>Start</button>
+    </div>
+  </div>
 </div>
 
-<div data-aos="fade-left"  className='lg:absolute lg:mt-28 mt-9'>
-        <img src='https://i.ibb.co/t8r6yf4/pngegg-1.png' className='img-fluid lg:h-96'/>
-      </div>
+</section>
 
-</div>
-
-    </section>
     
   
   )
