@@ -11,7 +11,7 @@ const Banner = () => {
   });
   return (       
 
-<section className='flex items-center justify-center bg-[url(https://efs.consulting/app/uploads/2023/07/Header_Upcoming-Developments-of-the-Automotive-Regulatory_3840x2160px-1-scaled.jpg)] bg-no-repeat bg-cover bg-center bg-slate-200 h-screen'>
+<section className='flex items-center justify-center bg-[url(https://images.unsplash.com/photo-1521228670520-81bb7638fc10?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80)] bg-no-repeat bg-cover bg-center bg-slate-200 h-screen'>
 
 <div data-aos="fade-right" className="w-full">
   <div className="text-center">
