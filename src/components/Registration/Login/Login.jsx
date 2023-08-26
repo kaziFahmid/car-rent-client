@@ -79,7 +79,7 @@ Swal.fire('Login Done')
       </div>
 
       <div className="w-1/2 md:block hidden ">
-        <img src="https://images.unsplash.com/photo-1589750602846-60028879da9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" className="rounded-2xl img-fluid" alt="page img"/>
+        <img src="https://i.ibb.co/tC2sPJ9/Screenshot-2023-08-27-001143.png" className="rounded-2xl img-fluid" alt="page img"/>
       </div>
 
     </div>
