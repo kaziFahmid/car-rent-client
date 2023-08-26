@@ -9,6 +9,10 @@ import Banner from './Banner/Banner';
 import BestRental from './BestRental/BestRental';
 import Journey from '../Journey/Journey';
 import Brands from './Brands/Brands';
+import AboutUs from '../AboutUs/AboutUs';
+import Testimonial from '../Testimonial/Testimonial';
+import Pricing from '../Pricing/Pricing';
+
 
 export default function Home() {
   const[cars,setCar]=useState('')
@@ -115,6 +119,10 @@ handleAvailabilityDate={handleAvailabilityDate} asc={asc} setAsc={setAsc} />
 
   <BestRental/>
   <Journey/>
+  <AboutUs/>
+  <Testimonial/>
+
+<Pricing/>
     </>
   )
   

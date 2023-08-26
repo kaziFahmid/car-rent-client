@@ -26,6 +26,8 @@ import EditCar from './components/Dashboard/EditCar';
 import OwnerRoute from './components/OwnerRoute';
 import RenterRoute from './components/RenterRoute';
 import ErrorPage from './components/ErrorPage/ErrorPage ';
+import ContactUs from './components/ContactUs/ContactUs';
+import Blog from './components/Blog/Blog';
 
 
 
@@ -44,6 +46,15 @@ const router = createBrowserRouter([
         path:'/',
         element:<Home/>
       },
+      {
+        path:'/contactus',
+        element:<ContactUs/>
+      },
+      {
+        path:'/blog',
+        element:<Blog/>
+      },
+  
       {
         path:'/login',
         element:<Login/>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Brands = () => {
   return (
-    <div className='flex  lg:flex-row flex-col justify-center gap-32 bg-slate-50 max-w-6xl items-center mx-auto mt-14'>
+    <div className='flex   lg:flex-row flex-col justify-center gap-32 bg-slate-50 max-w-6xl items-center mx-auto mt-28'>
       <div>
         <img src='https://i.ibb.co/YT9f7bQ/22-mercedes-benz-car-logo-png-brand-image.png' className='img-fluid h-48 lg:h-fit' />
       </div>

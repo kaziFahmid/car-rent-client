@@ -10,7 +10,7 @@ export default function FilterBox({handleCars,
   handleAvailabilityDate,asc,
   setAsc}) {
   return (
-    <div className='   mt-16 container mx-auto '>
+    <div className=' border-t-4 border-sky-500  bg-white p-6 shadow-xl  mt-24 container mx-auto '>
         <div>
         <input type="text" onChange={(e)=>{handleCars(e.target.value)}} placeholder="Search Car" className="input input-bordered w-full " />
         </div>
@@ -48,7 +48,7 @@ export default function FilterBox({handleCars,
 
 
 <div >
-<label className="block  font-semibold "> Sort by Price</label>
+<label className="block  font-semibold mb-2"> Sort by Price</label>
  <button className='btn bg-white 'onClick={()=>setAsc(!asc)}>{asc?'Price high to low':'Price low to high'}</button>
 </div>
 
@@ -60,37 +60,30 @@ export default function FilterBox({handleCars,
 
 
 
-            <div className="p-4  flex-col lg:flex-row flex justify-center gap-6 items-center">
-            <label className="block  font-semibold">Car Type:</label>
-
-
-
-
-
-
-
-
-
+            <div >
+            <label className="block mb-2 font-semibold">Car Type:</label>
             
-      <div className="flex items-center ">
+    <div className='flex justify-center gap-5 items-center'>
+    <div className="flex items-center ">
     
-        <input type="radio" onChange={(e)=>{handleCarType(e.target.value)}} id=" crossover" name="carType" value="Crossover" className="mr-2 radio checked:bg-blue-500 " />
-        <label htmlFor=" crossover" className="cursor-pointer">
-        Crossover
-        </label>
-      </div>
-      <div className="flex items-center ">
-        <input type="radio" onChange={(e)=>{handleCarType(e.target.value)}} id="sedan" name="carType" value="Sedan" className="mr-2 radio checked:bg-blue-500" />
-        <label htmlFor="sedan" className="cursor-pointer">
-          Sedan
-        </label>
-      </div>
-      <div className="flex items-center ">
-        <input type="radio" onChange={(e)=>{handleCarType(e.target.value)}} id="suv" name="carType" value="SUV" className="mr-2 radio checked:bg-blue-500" />
-        <label htmlFor="suv" className="cursor-pointer ">
-          SUV
-        </label>
-      </div>
+    <input type="radio" onChange={(e)=>{handleCarType(e.target.value)}} id=" crossover" name="carType" value="Crossover" className="mr-2 radio checked:bg-blue-500 " />
+    <label htmlFor=" crossover" className="cursor-pointer">
+    Crossover
+    </label>
+  </div>
+  <div className="flex items-center ">
+    <input type="radio" onChange={(e)=>{handleCarType(e.target.value)}} id="sedan" name="carType" value="Sedan" className="mr-2 radio checked:bg-blue-500" />
+    <label htmlFor="sedan" className="cursor-pointer">
+      Sedan
+    </label>
+  </div>
+  <div className="flex items-center ">
+    <input type="radio" onChange={(e)=>{handleCarType(e.target.value)}} id="suv" name="carType" value="SUV" className="mr-2 radio checked:bg-blue-500" />
+    <label htmlFor="suv" className="cursor-pointer ">
+      SUV
+    </label>
+  </div>
+    </div>
     </div>
 
 
@@ -98,7 +91,7 @@ export default function FilterBox({handleCars,
 
 
             <div>
-            <label className="block  font-semibold">Availability:</label>
+            <label className="block  font-semibold mb-2">Availability:</label>
             <input type="date" onChange={(e)=>{handleAvailabilityDate(e.target.value)}}  className="input input-bordered w-full  " />
             </div>
             

@@ -1,6 +1,20 @@
 import React from 'react'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 const BestRental = () => {
+
+  AOS.init({
+    offset: 200,
+    duration: 600,
+    easing: 'ease-in-sine',
+    delay: 100,
+  });
+
+
+
+
+
+
   return (
    <>
    <div className='text-center mt-36'>
@@ -8,12 +22,22 @@ const BestRental = () => {
     <h1 className='text-3xl'>Best Car Rental Services</h1>
     <p>We provide Best classic  services as below</p>
    </div>
-   <div className='grid lg:grid-cols-2 grid-cols-1 gap-5'>
-      <div>
-        <img src='https://i.ibb.co/f9mSMGP/Group-77.png' className='img-fluid'/>
-      </div>
-     
-   <ul className='flex  flex-col items-center gap-12 justify-center'>
+   
+
+<section className='grid lg:grid-cols-2 grid-cols-1'>
+
+<div data-aos="fade-right">
+
+  <div >
+  <img src='https://i.ibb.co/f9mSMGP/Group-77.png' className='img-fluid'/>
+ </div>
+
+</div>
+
+
+
+<div  className='flex justify-center items-center'>
+<ul className='flex  flex-col items-center gap-12 justify-center'>
     <li>
       <div>
       <h3 className='text-xl  font-semibold mb-3'>24/7 Customer Support</h3>
@@ -34,7 +58,16 @@ const BestRental = () => {
     </li>
    </ul>
     
-    </div>
+</div>
+</section>
+
+
+
+
+
+
+
+   
    
    
    

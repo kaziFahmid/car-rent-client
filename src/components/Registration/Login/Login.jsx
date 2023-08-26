@@ -29,11 +29,78 @@ Swal.fire('Login Done')
 }
 
   return (
-    <div>
+    <>
         <Helmet>
     <title>Car Hunting|Login</title>
   </Helmet>
-      <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
+
+
+ 
+
+
+<div >
+<section className="border-red-500   mt-11 flex items-center justify-center">
+    <div className="bg-gray-100 p-5 flex rounded-2xl shadow-lg max-w-3xl">
+      <div className="md:w-1/2 px-5">
+        <h2 className="text-2xl font-bold text-[#002D74]">Login</h2>
+        <p className="text-sm mt-4 text-[#002D74]">If you have an account, please login</p>
+        <form onSubmit={handleSubmit} className="mt-6" action="#" method="POST">
+          <div>
+            <label className="block text-gray-700">Email Address</label>
+            <input type="email" name="email" id="" placeholder="Enter Email Address" className="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none" autofocus autocomplete required/>
+          </div>
+
+          <div className="mt-4">
+            <label className="block text-gray-700">Password</label>
+            <input type="password" name="password" id="" placeholder="Enter Password" minlength="6" className="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500
+                  focus:bg-white focus:outline-none" required/>
+          </div>
+
+          <div className="text-right mt-2">
+            <a href="#" className="text-sm font-semibold text-gray-700 hover:text-blue-700 focus:text-blue-700">Forgot Password?</a>
+          </div>
+
+          <button type="submit" className="w-full block bg-blue-500 hover:bg-blue-400 focus:bg-blue-400 text-white font-semibold rounded-lg
+                px-4 py-3 mt-6">Log In</button>
+        </form>
+
+        <div className="mt-7 grid grid-cols-3 items-center text-gray-500">
+          <hr className="border-gray-500" />
+          <p className="text-center text-sm">OR</p>
+          <hr className="border-gray-500" />
+        </div>
+
+      
+
+        <div className="text-sm flex justify-between items-center mt-3">
+          <p>If you don't have an account...</p>
+          <button className="py-2 px-5 ml-3 bg-white border rounded-xl hover:scale-110 duration-300 border-blue-400  "><Link to='/signup'>Register</Link></button>
+        </div>
+      </div>
+
+      <div className="w-1/2 md:block hidden ">
+        <img src="https://images.unsplash.com/photo-1589750602846-60028879da9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" className="rounded-2xl img-fluid" alt="page img"/>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {/* <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
          
           <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
@@ -96,7 +163,7 @@ Swal.fire('Login Done')
 
          
         </div>
-      </div>
-    </div>
+      </div> */}
+    </>
   )
 }

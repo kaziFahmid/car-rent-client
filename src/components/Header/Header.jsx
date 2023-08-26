@@ -13,7 +13,7 @@ export default function Header() {
     };
   return (
     <>
-      <header className=' navbar flex justify-around items-center bg-white  '>
+      <header className=' navbar border-b border-gray-400 flex justify-around items-center bg-white  '>
         <div>
         <h1 className='italic font-bold text-2xl'>Car Hunting</h1>
         </div>
@@ -25,6 +25,18 @@ export default function Header() {
      {user&& <li className={`font-medium cursor-pointer hover:text-sky-500 duration-200 ${location.pathname === '/dashboard' ? 'text-sky-500' : ''}`}>
         <Link to="/dashboard">Dashboard</Link>
       </li>}
+      <li className={`font-medium cursor-pointer hover:text-sky-500 duration-200 ${location.pathname === '/contactus' ? 'text-sky-500' : ''}`}>
+        <Link to="/contactus">Contact Us</Link>
+      </li>
+
+
+      <li className={`font-medium cursor-pointer hover:text-sky-500 duration-200 ${location.pathname === '/blog' ? 'text-sky-500' : ''}`}>
+        <Link to="/blog">Blog</Link>
+      </li>
+
+
+
+
 
 {user?.email?<li className={`  font-medium cursor-pointer hover:text-sky-500 duration-200 ${location.pathname === '/dashboard' ? 'text-sky-500' : ''}`} onClick={logOut}>
      Logout
@@ -60,6 +72,17 @@ export default function Header() {
           <li className={`font-medium cursor-pointer hover:text-sky-500 duration-200 ${location.pathname === '/' ? 'text-sky-500' : ''}`}>
         <Link to="/">Home</Link>
       </li>
+      
+      <li className={` mt-5 font-medium cursor-pointer hover:text-sky-500 duration-200 ${location.pathname === '/contactus' ? 'text-sky-500' : ''}`}>
+        <Link to="/contactus">Contact Us</Link>
+      </li>
+
+
+      <li className={`font-medium cursor-pointer hover:text-sky-500 duration-200 ${location.pathname === '/blog' ? 'text-sky-500' : ''}`}>
+        <Link to="/blog">Blog</Link>
+      </li>
+
+
      {user&& <li className={` mt-5 font-medium cursor-pointer hover:text-sky-500 duration-200 ${location.pathname === '/dashboard' ? 'text-sky-500' : ''}`}>
         <Link to="/dashboard">Dashboard</Link>
       </li>}

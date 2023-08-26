@@ -5,7 +5,8 @@ import { updateProfile } from 'firebase/auth'
 import axios from 'axios'
 import Swal from 'sweetalert2'
 import { Helmet } from 'react-helmet'
-
+import data from './data.json'
+import Lottie from 'react-lottie';
 export default function Signup() {
     const{user, createUser}=useAuth()
     let navigate = useNavigate()
@@ -46,13 +47,24 @@ let handleSubmit =(e)=>{
 
 
 }
+const defaultOptions = {
+  loop: true,
+  autoplay: true, 
+  animationData: data,
+  rendererSettings: {
+    preserveAspectRatio: 'xMidYMid slice'
+  }
+};
   return (
-    <div>
+    <>
           <Helmet>
     <title>Car Hunting|Signup</title>
   </Helmet>
-    <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
-      <div className="sm:mx-auto sm:w-full sm:max-w-sm">
+  <section className='grid lg:grid-cols-2 grid-cols-1'>
+
+<div >
+<div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
+      <div className="  sm:mx-auto sm:w-full sm:max-w-sm">
        
         <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
          Signup to your account
@@ -60,7 +72,7 @@ let handleSubmit =(e)=>{
       </div>
 
       <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-        <form onSubmit={handleSubmit} className="space-y-6" action="#" method="POST">
+        <form onSubmit={handleSubmit} className="space-y-6 shadow-2xl px-9 py-9 rounded-lg" action="#" method="POST">
         
         <div>
             <label htmlFor="username" className="block text-sm font-medium leading-6 text-gray-900">
@@ -160,7 +172,7 @@ let handleSubmit =(e)=>{
           <div>
             <button
               type="submit"
-              className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="flex w-full justify-center rounded-md btn bg-sky-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600"
             >
               Signup
             </button>
@@ -172,6 +184,26 @@ let handleSubmit =(e)=>{
        
       </div>
     </div>
-  </div>
+</div>
+
+
+
+
+<div>
+<Lottie options={defaultOptions}
+           
+             />
+</div>
+
+
+
+
+
+
+
+
+
+  </section>
+  </>
   )
 }
